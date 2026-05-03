@@ -8,19 +8,19 @@ import os
 
 
 class Config(object):
-	BOT_TOKEN = os.environ.get("BOT_TOKEN", "8283163484:AAEsFwoqGMnFMXpw0hxfWNnnes0DEaq7Y6s")
-	API_ID = int(os.environ.get("API_ID", '26741021'))
-	API_HASH = os.environ.get("API_HASH", '7c5af0b88c33d2f5cce8df5d82eb2a94')
+	BOT_TOKEN = os.environ.get("BOT_TOKEN")
+	API_ID = int(os.environ.get("API_ID", 26741021))
+	API_HASH = os.environ.get("API_HASH")
 	STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS", "NoNeed")
 	STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME", "NoNeed")
-	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", '-1002084819782'))
+	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
 	DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
 	PRESET = os.environ.get("PRESET", "ultrafast")
 	OWNER_ID = int(os.environ.get("OWNER_ID", 6859451629))
 	CAPTION = "By @IMAXMOVIEHUB"
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "VideoWatermark_Bot")
-	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://devashibambhava0:devashibambhava0@cluster0.ux6amy9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "imax_watermark_bot")
+	DATABASE_URL = os.environ.get("DATABASE_URL")
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	ALLOW_UPLOAD_TO_STREAMTAPE = bool(os.environ.get("ALLOW_UPLOAD_TO_STREAMTAPE", False))
 	USAGE_WATERMARK_ADDER = """
